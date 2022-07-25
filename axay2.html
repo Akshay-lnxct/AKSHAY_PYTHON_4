@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <script src="javascript/validation.js">
+
+           
+
+        </script>
+    </head>
+    <body>
+        <form method="post " name="frm" action="" >
+            <table>
+                <div>
+                    <tr>
+                        <td>first name</td>
+                        <td><input type="text" name="fname" onblur="checkfname();"></td>
+                        <td><span id="fname"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>last name</td>
+                        <td><input type="text" name="lname" onblur="checklname();"></td>
+                        <td><span id="lname"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>email</td>
+                        <td><input type="email" name="email" onblur="checkemail();"></td>
+                        <td><span id="email"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>mobile no</td>
+                        <td><input type="mobile" name="mobile" onblur="checkmobile();"></td>
+                        <td><span id="mobile"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>gender</td>
+                        <td><input type="radio" name="gender" value="male">male
+                        <input type="radio" name="gender" value="male">female</td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>hoby</td>
+                        <td><input type="checkbox" name="cricket">cricket<br>
+                        <input type="checkbox" name="cricket">reading<br>
+                        <input type="checkbox" name="cricket">traveling</td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>education</td>
+                        <td><select name="education">
+                                <option value="10th">10th</option>
+                                <option value="12th">12th</option>
+                                <option value="graduate">graduate</option>
+                            </section>
+                        </td>
+                        
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>password</td>
+                        <td><input type="password" name="password" onblur="checkpassword();"></td>
+                        <td><span id="password"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>conform password</td>
+                        <td><input type="password" name="cpassword" onblur="checkcpassword();"></td>
+                        <td><span id="cpassword"></span></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>address</td>
+                        <td><textarea rows="5" cols="20"></textarea></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" name="name" value="submit"></td>
+
+                    </tr> 
+                </div>
+            </table>
+        </form>
+
+    </body>
+</html>
